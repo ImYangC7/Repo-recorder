@@ -8898,6 +8898,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -9073,6 +9078,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -9081,7 +9091,7 @@
   },
   "ImYangC7/LungNoduleAgent": {
     "stars": 3,
-    "clones": 32,
+    "clones": 33,
     "views": 126,
     "history": {
       "2025-11-27": {
@@ -9248,11 +9258,16 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 1,
+        "views": 0
       }
     },
     "last_stars": 3,
-    "last_clones": 3,
-    "last_views": 83
+    "last_clones": 4,
+    "last_views": 76
   },
   "Lin-Jiong-HDU/GraphRAGindex": {
     "stars": 0,
@@ -9423,6 +9438,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -9431,7 +9451,7 @@
   },
   "ImYangC7/Intelligent-AI-Question-and-Test-Generation-System": {
     "stars": 4,
-    "clones": 11,
+    "clones": 14,
     "views": 2,
     "history": {
       "2025-11-27": {
@@ -9598,10 +9618,15 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 3,
+        "views": 0
       }
     },
     "last_stars": 4,
-    "last_clones": 6,
+    "last_clones": 9,
     "last_views": 2
   },
   "didiforgithub/AutoEnv": {
@@ -9773,15 +9798,20 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
     "last_clones": 0,
-    "last_views": 8
+    "last_views": 1
   },
   "ImYangC7/VRBench_Web": {
     "stars": 1,
-    "clones": 65,
+    "clones": 67,
     "views": 142,
     "history": {
       "2025-11-27": {
@@ -9948,10 +9978,15 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 2,
+        "views": 0
       }
     },
     "last_stars": 0,
-    "last_clones": 6,
+    "last_clones": 8,
     "last_views": 1
   },
   "Lin-Jiong-HDU/aifan": {
@@ -10123,11 +10158,16 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
     "last_clones": 0,
-    "last_views": 5
+    "last_views": 0
   },
   "jinhui66/ok": {
     "stars": 0,
@@ -10295,6 +10335,11 @@
         "views": 0
       },
       "2025-12-29": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2025-12-30": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -10473,6 +10518,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -10645,6 +10695,11 @@
         "views": 0
       },
       "2025-12-29": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2025-12-30": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -10823,6 +10878,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -10831,8 +10891,8 @@
   },
   "ImYangC7/Repo-recorder": {
     "stars": 0,
-    "clones": 179,
-    "views": 101,
+    "clones": 184,
+    "views": 103,
     "history": {
       "2025-11-27": {
         "stars": 0,
@@ -10998,11 +11058,16 @@
         "stars": 0,
         "clones": 1,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 5,
+        "views": 2
       }
     },
     "last_stars": 0,
-    "last_clones": 127,
-    "last_views": 3
+    "last_clones": 132,
+    "last_views": 5
   },
   "Lin-Jiong-HDU/fairllm": {
     "stars": 0,
@@ -11173,15 +11238,20 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
     "last_clones": 0,
-    "last_views": 1
+    "last_views": 0
   },
   "YU-deep/Awesome-Latent-Space": {
-    "stars": 259,
-    "clones": 221,
+    "stars": 261,
+    "clones": 228,
     "views": 1780,
     "history": {
       "2025-12-02": {
@@ -11323,16 +11393,21 @@
         "stars": 1,
         "clones": 12,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 2,
+        "clones": 7,
+        "views": 0
       }
     },
-    "last_stars": 259,
-    "last_clones": 112,
-    "last_views": 749
+    "last_stars": 261,
+    "last_clones": 119,
+    "last_views": 736
   },
   "FoundationAgents/VR-Bench": {
     "stars": 46,
     "clones": 192,
-    "views": 1363,
+    "views": 1379,
     "history": {
       "2025-12-04": {
         "stars": 37,
@@ -11463,11 +11538,16 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 0,
+        "views": 16
       }
     },
     "last_stars": 46,
-    "last_clones": 61,
-    "last_views": 513
+    "last_clones": 54,
+    "last_views": 529
   },
   "didiforgithub/GraphRag": {
     "stars": 0,
@@ -11603,6 +11683,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -11733,11 +11818,16 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 1,
     "last_clones": 12,
-    "last_views": 10
+    "last_views": 9
   },
   "Wu-beining/Multi-Engine-GEO": {
     "stars": 0,
@@ -11813,10 +11903,15 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2025-12-30": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
-    "last_clones": 26,
-    "last_views": 21
+    "last_clones": 6,
+    "last_views": 3
   }
 }
