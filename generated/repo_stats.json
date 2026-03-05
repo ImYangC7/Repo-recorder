@@ -9198,6 +9198,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-05": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -9673,6 +9678,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-05": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -9682,7 +9692,7 @@
   "ImYangC7/LungNoduleAgent": {
     "stars": 17,
     "clones": 55,
-    "views": 429,
+    "views": 436,
     "history": {
       "2025-11-27": {
         "stars": 0,
@@ -10148,11 +10158,16 @@
         "stars": 0,
         "clones": 0,
         "views": 6
+      },
+      "2026-03-05": {
+        "stars": 0,
+        "clones": 0,
+        "views": 7
       }
     },
     "last_stars": 16,
     "last_clones": 5,
-    "last_views": 102
+    "last_views": 109
   },
   "Lin-Jiong-HDU/GraphRAGindex": {
     "stars": 0,
@@ -10623,6 +10638,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-05": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -10631,7 +10651,7 @@
   },
   "ImYangC7/Intelligent-AI-Question-and-Test-Generation-System": {
     "stars": 4,
-    "clones": 31,
+    "clones": 32,
     "views": 7,
     "history": {
       "2025-11-27": {
@@ -11098,10 +11118,15 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-05": {
+        "stars": 0,
+        "clones": 1,
+        "views": 0
       }
     },
     "last_stars": 4,
-    "last_clones": 4,
+    "last_clones": 5,
     "last_views": 0
   },
   "didiforgithub/AutoEnv": {
@@ -11570,6 +11595,11 @@
         "views": 0
       },
       "2026-03-04": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-03-05": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -12048,11 +12078,16 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-05": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
     "last_clones": 2,
-    "last_views": 2
+    "last_views": 1
   },
   "Lin-Jiong-HDU/aifan": {
     "stars": 0,
@@ -12520,6 +12555,11 @@
         "views": 0
       },
       "2026-03-04": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-03-05": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -12998,6 +13038,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-05": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -13470,6 +13515,11 @@
         "views": 0
       },
       "2026-03-04": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-03-05": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -13948,6 +13998,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-05": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -14423,6 +14478,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-05": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -14431,8 +14491,8 @@
   },
   "ImYangC7/Repo-recorder": {
     "stars": 0,
-    "clones": 313,
-    "views": 115,
+    "clones": 314,
+    "views": 154,
     "history": {
       "2025-11-27": {
         "stars": 0,
@@ -14898,11 +14958,16 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-05": {
+        "stars": 0,
+        "clones": 1,
+        "views": 39
       }
     },
     "last_stars": 0,
-    "last_clones": 158,
-    "last_views": 1
+    "last_clones": 159,
+    "last_views": 40
   },
   "Lin-Jiong-HDU/fairllm": {
     "stars": 0,
@@ -15373,6 +15438,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-05": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -15380,9 +15450,9 @@
     "last_views": 1
   },
   "YU-deep/Awesome-Latent-Space": {
-    "stars": 364,
+    "stars": 365,
     "clones": 439,
-    "views": 2638,
+    "views": 2719,
     "history": {
       "2025-12-02": {
         "stars": 88,
@@ -15823,16 +15893,21 @@
         "stars": 3,
         "clones": 10,
         "views": 79
+      },
+      "2026-03-05": {
+        "stars": 1,
+        "clones": 0,
+        "views": 81
       }
     },
-    "last_stars": 364,
-    "last_clones": 118,
-    "last_views": 854
+    "last_stars": 365,
+    "last_clones": 117,
+    "last_views": 935
   },
   "FoundationAgents/VR-Bench": {
     "stars": 53,
-    "clones": 257,
-    "views": 1809,
+    "clones": 259,
+    "views": 1819,
     "history": {
       "2025-12-04": {
         "stars": 37,
@@ -16263,11 +16338,16 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-05": {
+        "stars": 0,
+        "clones": 2,
+        "views": 10
       }
     },
     "last_stars": 53,
-    "last_clones": 24,
-    "last_views": 185
+    "last_clones": 26,
+    "last_views": 195
   },
   "didiforgithub/GraphRag": {
     "stars": 0,
@@ -16703,6 +16783,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-05": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -17130,6 +17215,11 @@
         "views": 0
       },
       "2026-03-04": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-03-05": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -17750,6 +17840,11 @@
         "views": 0
       },
       "2026-03-04": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-03-05": {
         "stars": 0,
         "clones": 0,
         "views": 0
