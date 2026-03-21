@@ -9278,6 +9278,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-21": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -9830,6 +9835,11 @@
         "views": 0
       },
       "2026-03-20": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-03-21": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -10388,11 +10398,16 @@
         "stars": 0,
         "clones": 0,
         "views": 10
+      },
+      "2026-03-21": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 19,
     "last_clones": 7,
-    "last_views": 259
+    "last_views": 255
   },
   "Lin-Jiong-HDU/GraphRAGindex": {
     "stars": 0,
@@ -10940,6 +10955,11 @@
         "views": 0
       },
       "2026-03-20": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-03-21": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -11498,6 +11518,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-21": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 4,
@@ -12050,6 +12075,11 @@
         "views": 0
       },
       "2026-03-20": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-03-21": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -12608,6 +12638,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-21": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -13160,6 +13195,11 @@
         "views": 0
       },
       "2026-03-20": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-03-21": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -13718,6 +13758,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-21": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -14270,6 +14315,11 @@
         "views": 0
       },
       "2026-03-20": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-03-21": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -14828,6 +14878,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-21": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -15380,6 +15435,11 @@
         "views": 0
       },
       "2026-03-20": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-03-21": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -15938,10 +15998,15 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-21": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
-    "last_clones": 160,
+    "last_clones": 153,
     "last_views": 0
   },
   "Lin-Jiong-HDU/fairllm": {
@@ -16493,6 +16558,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-21": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -16500,7 +16570,7 @@
     "last_views": 4
   },
   "YU-deep/Awesome-Latent-Space": {
-    "stars": 398,
+    "stars": 399,
     "clones": 488,
     "views": 3137,
     "history": {
@@ -17023,11 +17093,16 @@
         "stars": 1,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-21": {
+        "stars": 1,
+        "clones": 0,
+        "views": 0
       }
     },
-    "last_stars": 398,
-    "last_clones": 111,
-    "last_views": 1110
+    "last_stars": 399,
+    "last_clones": 110,
+    "last_views": 1062
   },
   "FoundationAgents/VR-Bench": {
     "stars": 56,
@@ -17543,11 +17618,16 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-21": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 56,
-    "last_clones": 22,
-    "last_views": 140
+    "last_clones": 21,
+    "last_views": 129
   },
   "didiforgithub/GraphRag": {
     "stars": 0,
@@ -18063,6 +18143,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-03-21": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -18570,6 +18655,11 @@
         "views": 0
       },
       "2026-03-20": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-03-21": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -19273,6 +19363,11 @@
         "stars": 0,
         "clones": 0,
         "views": 1
+      },
+      "2026-03-21": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 1,
