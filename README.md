@@ -56,6 +56,8 @@
 
 1. **点击use this template按钮创建新仓库，并配置 GitHub Actions Secrets：**
    - （必选）`ACCESS_TOKEN`：你的 GitHub Personal Access Token（需 `repo` 权限）
+   - （可选）`GITHUB_USERNAME`：指定要统计的 GitHub 登录名，默认使用仓库 owner
+   - （可选）`GITHUB_LOGIN_ALIASES`：账号改名或历史登录名，逗号分隔，用于匹配代码变更行数
    - （可选）`EXCLUDED`：排除的仓库名，逗号分隔
    - （可选）`EXCLUDED_LANGS`：排除的语言，逗号分隔
    - （可选）`EXCLUDE_FORKED_REPOS`：如需排除 fork 仓库，设置为 `true`

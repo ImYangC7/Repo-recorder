@@ -38,6 +38,10 @@ def save_repo_stats(data):
         json.dump(data, f, indent=2)
 
 
+def split_csv_env(value):
+    return {x.strip() for x in value.split(",") if x.strip()} if value else set()
+
+
 ################################################################################
 # Individual Image Generation Functions
 ################################################################################
@@ -194,9 +198,24 @@ async def main() -> None:
     if not access_token:
         # access_token = os.getenv("GITHUB_TOKEN")
         raise Exception("A personal access token is required to proceed!")
-    user = os.getenv("GITHUB_ACTOR")
+    user = (
+        os.getenv("GITHUB_USERNAME")
+        or os.getenv("GITHUB_REPOSITORY_OWNER")
+        or os.getenv("GITHUB_ACTOR")
+    )
     if user is None:
-        raise RuntimeError("Environment variable GITHUB_ACTOR must be set.")
+        raise RuntimeError(
+            "One of GITHUB_USERNAME, GITHUB_REPOSITORY_OWNER, "
+            "or GITHUB_ACTOR must be set."
+        )
+    username_aliases = split_csv_env(os.getenv("GITHUB_LOGIN_ALIASES"))
+    for alias in (
+        user,
+        os.getenv("GITHUB_REPOSITORY_OWNER"),
+        os.getenv("GITHUB_ACTOR"),
+    ):
+        if alias:
+            username_aliases.add(alias)
     exclude_repos = os.getenv("EXCLUDED")
     excluded_repos = (
         {x.strip() for x in exclude_repos.split(",")} if exclude_repos else None
@@ -219,6 +238,7 @@ async def main() -> None:
             exclude_repos=excluded_repos,
             exclude_langs=excluded_langs,
             ignore_forked_repos=ignore_forked_repos,
+            username_aliases=username_aliases,
         )
         repos = await s.repos
         print("实际统计的仓库数量:", len(repos))

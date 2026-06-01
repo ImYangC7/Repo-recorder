@@ -258,8 +258,14 @@ class Stats(object):
         exclude_repos: Optional[Set] = None,
         exclude_langs: Optional[Set] = None,
         ignore_forked_repos: bool = False,
+        username_aliases: Optional[Set[str]] = None,
     ):
         self.username = username
+        self._username_aliases = {
+            alias.strip() for alias in username_aliases or set() if alias.strip()
+        }
+        if username:
+            self._username_aliases.add(username)
         self._ignore_forked_repos = ignore_forked_repos
         self._exclude_repos = set() if exclude_repos is None else exclude_repos
         self._exclude_langs = set() if exclude_langs is None else exclude_langs
@@ -317,13 +323,17 @@ Languages:
             )
             raw_results = raw_results if raw_results is not None else {}
 
-            self._name = raw_results.get("data", {}).get("viewer", {}).get("name", None)
+            viewer = raw_results.get("data", {}).get("viewer", {})
+            viewer_login = viewer.get("login")
+            if viewer_login:
+                self.username = viewer_login
+                self._username_aliases.add(viewer_login)
+
+            self._name = viewer.get("name", None)
             if self._name is None:
-                self._name = (
-                    raw_results.get("data", {})
-                    .get("viewer", {})
-                    .get("login", "No Name")
-                )
+                self._name = viewer.get("login", "No Name")
+            elif self._name and not any(char.isspace() for char in self._name):
+                self._username_aliases.add(self._name)
 
             contrib_repos = (
                 raw_results.get("data", {})
@@ -484,8 +494,24 @@ Languages:
             return self._lines_changed
         additions = 0
         deletions = 0
-        for repo in await self.repos:
+        repos = await self.repos
+        valid_stats_responses = 0
+        matched_authors = set()
+        candidate_usernames = {
+            alias.lower() for alias in self._username_aliases if alias
+        }
+        for repo in repos:
             r = await self.queries.query_rest(f"/repos/{repo}/stats/contributors")
+            if not isinstance(r, list):
+                message = (
+                    r.get("message", "unexpected response")
+                    if isinstance(r, dict)
+                    else type(r).__name__
+                )
+                print(f"Skipping contributor stats for {repo}: {message}")
+                continue
+
+            valid_stats_responses += 1
             for author_obj in r:
                 # Handle malformed response from the API by skipping this repo
                 if not isinstance(author_obj, dict) or not isinstance(
@@ -493,12 +519,24 @@ Languages:
                 ):
                     continue
                 author = author_obj.get("author", {}).get("login", "")
-                if author != self.username:
+                if author.lower() not in candidate_usernames:
                     continue
 
+                matched_authors.add(author)
                 for week in author_obj.get("weeks", []):
                     additions += week.get("a", 0)
                     deletions += week.get("d", 0)
+
+        if valid_stats_responses == 0 and repos:
+            raise RuntimeError(
+                "GitHub did not return any valid contributor statistics. "
+                "Refusing to generate a misleading 0 lines-changed value."
+            )
+        if not matched_authors:
+            print(
+                "No matching contributor stats author found for aliases: "
+                f"{', '.join(sorted(candidate_usernames))}"
+            )
 
         self._lines_changed = (additions, deletions)
         return self._lines_changed
