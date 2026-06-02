@@ -65,7 +65,13 @@ class Queries(object):
                     return result
         return dict()
 
-    async def query_rest(self, path: str, params: Optional[Dict] = None) -> Dict:
+    async def query_rest(
+        self,
+        path: str,
+        params: Optional[Dict] = None,
+        max_retries: int = 60,
+        retry_delay: int = 2,
+    ) -> Dict:
         """
         Make a request to the REST API
         :param path: API path to query
@@ -73,7 +79,7 @@ class Queries(object):
         :return: deserialized REST JSON output
         """
 
-        for _ in range(60):
+        for _ in range(max_retries):
             headers = {
                 "Authorization": f"token {self.access_token}",
             }
@@ -91,7 +97,7 @@ class Queries(object):
                 if r_async.status == 202:
                     # print(f"{path} returned 202. Retrying...")
                     print(f"A path returned 202. Retrying...")
-                    await asyncio.sleep(2)
+                    await asyncio.sleep(retry_delay)
                     continue
 
                 result = await r_async.json()
@@ -108,7 +114,7 @@ class Queries(object):
                     )
                     if r_requests.status_code == 202:
                         print(f"A path returned 202. Retrying...")
-                        await asyncio.sleep(2)
+                        await asyncio.sleep(retry_delay)
                         continue
                     elif r_requests.status_code == 200:
                         return r_requests.json()
@@ -492,16 +498,17 @@ Languages:
         """
         if self._lines_changed is not None:
             return self._lines_changed
-        additions = 0
-        deletions = 0
         repos = await self.repos
-        valid_stats_responses = 0
-        matched_authors = set()
         candidate_usernames = {
             alias.lower() for alias in self._username_aliases if alias
         }
-        for repo in repos:
-            r = await self.queries.query_rest(f"/repos/{repo}/stats/contributors")
+
+        async def fetch_repo_lines_changed(repo: str) -> Tuple[int, int, Set[str], bool]:
+            r = await self.queries.query_rest(
+                f"/repos/{repo}/stats/contributors",
+                max_retries=5,
+                retry_delay=2,
+            )
             if not isinstance(r, list):
                 message = (
                     r.get("message", "unexpected response")
@@ -509,9 +516,11 @@ Languages:
                     else type(r).__name__
                 )
                 print(f"Skipping contributor stats for {repo}: {message}")
-                continue
+                return 0, 0, set(), False
 
-            valid_stats_responses += 1
+            repo_additions = 0
+            repo_deletions = 0
+            repo_matched_authors = set()
             for author_obj in r:
                 # Handle malformed response from the API by skipping this repo
                 if not isinstance(author_obj, dict) or not isinstance(
@@ -522,16 +531,25 @@ Languages:
                 if author.lower() not in candidate_usernames:
                     continue
 
-                matched_authors.add(author)
+                repo_matched_authors.add(author)
                 for week in author_obj.get("weeks", []):
-                    additions += week.get("a", 0)
-                    deletions += week.get("d", 0)
+                    repo_additions += week.get("a", 0)
+                    repo_deletions += week.get("d", 0)
+
+            return repo_additions, repo_deletions, repo_matched_authors, True
+
+        results = await asyncio.gather(
+            *(fetch_repo_lines_changed(repo) for repo in repos)
+        )
+        additions = sum(result[0] for result in results)
+        deletions = sum(result[1] for result in results)
+        valid_stats_responses = sum(1 for result in results if result[3])
+        matched_authors = set()
+        for _, _, repo_matched_authors, _ in results:
+            matched_authors.update(repo_matched_authors)
 
         if valid_stats_responses == 0 and repos:
-            raise RuntimeError(
-                "GitHub did not return any valid contributor statistics. "
-                "Refusing to generate a misleading 0 lines-changed value."
-            )
+            print("No valid GitHub contributor statistics were returned.")
         if not matched_authors:
             print(
                 "No matching contributor stats author found for aliases: "

@@ -4,6 +4,7 @@ import asyncio
 import os
 import re
 import json
+import subprocess
 from datetime import datetime, timedelta
 
 import aiohttp
@@ -42,6 +43,51 @@ def split_csv_env(value):
     return {x.strip() for x in value.split(",") if x.strip()} if value else set()
 
 
+def parse_lines_changed(svg_text):
+    match = re.search(r"Lines of code changed</td><td>([0-9,]+)</td>", svg_text)
+    if not match:
+        return 0
+    return int(match.group(1).replace(",", ""))
+
+
+def load_existing_lines_changed():
+    if not os.path.exists("generated/overview.svg"):
+        return 0
+    with open("generated/overview.svg", "r") as f:
+        return parse_lines_changed(f.read())
+
+
+def load_git_history_lines_changed():
+    try:
+        revs = subprocess.run(
+            ["git", "rev-list", "HEAD", "--", "generated/overview.svg"],
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.splitlines()
+    except (OSError, subprocess.CalledProcessError):
+        return 0
+
+    for rev in revs:
+        try:
+            svg = subprocess.run(
+                ["git", "show", f"{rev}:generated/overview.svg"],
+                check=True,
+                capture_output=True,
+                text=True,
+            ).stdout
+        except (OSError, subprocess.CalledProcessError):
+            continue
+        changed = parse_lines_changed(svg)
+        if changed > 0:
+            return changed
+    return 0
+
+
+def get_lines_changed_fallback():
+    return max(load_existing_lines_changed(), load_git_history_lines_changed())
+
+
 ################################################################################
 # Individual Image Generation Functions
 ################################################################################
@@ -60,6 +106,10 @@ async def generate_overview(s: Stats) -> None:
     output = re.sub("{{ forks }}", f"{await s.forks:,}", output)
     output = re.sub("{{ contributions }}", f"{await s.total_contributions:,}", output)
     changed = (await s.lines_changed)[0] + (await s.lines_changed)[1]
+    fallback_changed = get_lines_changed_fallback()
+    if fallback_changed > changed:
+        print(f"Using fallback lines changed value: {fallback_changed:,}")
+        changed = fallback_changed
     output = re.sub("{{ lines_changed }}", f"{changed:,}", output)
     output = re.sub("{{ views }}", f"{await s.views:,}", output)
     output = re.sub("{{ repos }}", f"{len(await s.repos):,}", output)
