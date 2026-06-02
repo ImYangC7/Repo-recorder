@@ -10571,7 +10571,7 @@
       },
       "2026-06-02": {
         "stars": 0,
-        "clones": 1,
+        "clones": 0,
         "views": 0
       }
     },
@@ -11497,7 +11497,7 @@
       "2026-06-02": {
         "stars": 0,
         "clones": 0,
-        "views": 5
+        "views": 0
       }
     },
     "last_stars": 29,
@@ -20521,7 +20521,7 @@
       },
       "2026-06-02": {
         "stars": 0,
-        "clones": 6,
+        "clones": 0,
         "views": 0
       }
     },
@@ -22346,7 +22346,7 @@
       },
       "2026-06-02": {
         "stars": 0,
-        "clones": 1,
+        "clones": 0,
         "views": 0
       }
     },
@@ -27305,7 +27305,7 @@
     "last_views": 6
   },
   "ImYangC7/Awesome-OPC": {
-    "stars": 1,
+    "stars": 2,
     "clones": 68,
     "views": 21,
     "history": {
@@ -27320,27 +27320,27 @@
         "views": 20
       },
       "2026-06-02": {
-        "stars": 0,
-        "clones": 1,
-        "views": 1
-      }
-    },
-    "last_stars": 1,
-    "last_clones": 68,
-    "last_views": 21
-  },
-  "ImYangC7/Awesome-AP": {
-    "stars": 0,
-    "clones": 0,
-    "views": 0,
-    "history": {
-      "2026-06-02": {
-        "stars": 0,
+        "stars": 1,
         "clones": 0,
         "views": 0
       }
     },
-    "last_stars": 0,
+    "last_stars": 2,
+    "last_clones": 68,
+    "last_views": 21
+  },
+  "ImYangC7/Awesome-AP": {
+    "stars": 1,
+    "clones": 0,
+    "views": 0,
+    "history": {
+      "2026-06-02": {
+        "stars": 1,
+        "clones": 0,
+        "views": 0
+      }
+    },
+    "last_stars": 1,
     "last_clones": 0,
     "last_views": 0
   },
@@ -27351,8 +27351,8 @@
     "history": {
       "2026-06-02": {
         "stars": 0,
-        "clones": 1,
-        "views": 6
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
