@@ -9763,6 +9763,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -9771,7 +9776,7 @@
   },
   "jinhui66/ICH-HPINet": {
     "stars": 0,
-    "clones": 69,
+    "clones": 70,
     "views": 132,
     "history": {
       "2025-11-27": {
@@ -10803,15 +10808,20 @@
         "stars": 0,
         "clones": 1,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 1,
+        "views": 0
       }
     },
     "last_stars": 0,
-    "last_clones": 4,
+    "last_clones": 5,
     "last_views": 0
   },
   "ImYangC7/LungNoduleAgent": {
-    "stars": 32,
-    "clones": 141,
+    "stars": 33,
+    "clones": 142,
     "views": 1091,
     "history": {
       "2025-11-27": {
@@ -11843,11 +11853,16 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 1,
+        "clones": 1,
+        "views": 0
       }
     },
-    "last_stars": 31,
-    "last_clones": 17,
-    "last_views": 73
+    "last_stars": 32,
+    "last_clones": 18,
+    "last_views": 67
   },
   "Lin-Jiong-HDU/GraphRAGindex": {
     "stars": 0,
@@ -12880,6 +12895,11 @@
         "views": 0
       },
       "2026-06-25": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-06-26": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -13923,6 +13943,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 4,
@@ -14963,6 +14988,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -14971,7 +15001,7 @@
   },
   "ImYangC7/VRBench_Web": {
     "stars": 1,
-    "clones": 113,
+    "clones": 115,
     "views": 172,
     "history": {
       "2025-11-27": {
@@ -16003,10 +16033,15 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 2,
+        "views": 0
       }
     },
     "last_stars": 0,
-    "last_clones": 5,
+    "last_clones": 7,
     "last_views": 0
   },
   "Lin-Jiong-HDU/aifan": {
@@ -17040,6 +17075,11 @@
         "views": 0
       },
       "2026-06-25": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-06-26": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -18815,6 +18855,11 @@
         "views": 0
       },
       "2026-06-25": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-06-26": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -20748,6 +20793,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -20756,7 +20806,7 @@
   },
   "ImYangC7/Repo-recorder": {
     "stars": 0,
-    "clones": 915,
+    "clones": 922,
     "views": 165,
     "history": {
       "2025-11-27": {
@@ -21788,10 +21838,15 @@
         "stars": 0,
         "clones": 13,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 7,
+        "views": 0
       }
     },
     "last_stars": 0,
-    "last_clones": 348,
+    "last_clones": 355,
     "last_views": 0
   },
   "Lin-Jiong-HDU/fairllm": {
@@ -22828,6 +22883,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -23847,7 +23907,7 @@
   "FoundationAgents/VR-Bench": {
     "stars": 65,
     "clones": 410,
-    "views": 2035,
+    "views": 2039,
     "history": {
       "2025-12-04": {
         "stars": 37,
@@ -24843,11 +24903,16 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 4
       }
     },
     "last_stars": 65,
-    "last_clones": 76,
-    "last_views": 64
+    "last_clones": 25,
+    "last_views": 68
   },
   "didiforgithub/GraphRag": {
     "stars": 0,
@@ -25848,6 +25913,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -26843,10 +26913,15 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 1,
-    "last_clones": 86,
+    "last_clones": 85,
     "last_views": 2
   },
   "Wu-beining/Multi-Engine-GEO": {
@@ -28028,6 +28103,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 1,
@@ -28468,6 +28548,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 1,
@@ -28863,6 +28948,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -28871,8 +28961,8 @@
   },
   "Wu-beining/MAGEO": {
     "stars": 40,
-    "clones": 179,
-    "views": 265,
+    "clones": 181,
+    "views": 271,
     "history": {
       "2026-04-21": {
         "stars": 2,
@@ -29203,11 +29293,16 @@
         "stars": 1,
         "clones": 4,
         "views": 2
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 2,
+        "views": 6
       }
     },
     "last_stars": 40,
-    "last_clones": 36,
-    "last_views": 22
+    "last_clones": 38,
+    "last_views": 28
   },
   "ImYangC7/VR_bench_test": {
     "stars": 0,
@@ -29458,6 +29553,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -29663,6 +29763,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 2,
@@ -29863,11 +29968,16 @@
         "stars": 0,
         "clones": 0,
         "views": 1
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 1,
-    "last_clones": 3,
-    "last_views": 26
+    "last_clones": 2,
+    "last_views": 25
   },
   "haiyuanwan/DiffSynth-Studio": {
     "stars": 0,
@@ -30023,6 +30133,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -30165,6 +30280,11 @@
         "views": 0
       },
       "2026-06-25": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
+      },
+      "2026-06-26": {
         "stars": 0,
         "clones": 0,
         "views": 0
@@ -30393,6 +30513,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -30523,6 +30648,11 @@
         "stars": 0,
         "clones": 0,
         "views": 21
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 2,
@@ -30648,6 +30778,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -30758,6 +30893,11 @@
         "stars": 0,
         "clones": 0,
         "views": 0
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 0,
@@ -30813,25 +30953,35 @@
         "stars": 0,
         "clones": 0,
         "views": 4
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 0,
+        "views": 0
       }
     },
     "last_stars": 3,
-    "last_clones": 57,
-    "last_views": 34
+    "last_clones": 48,
+    "last_views": 28
   },
   "xlyu0106/Awesome-Latent-Space": {
     "stars": 922,
-    "clones": 39,
-    "views": 638,
+    "clones": 42,
+    "views": 639,
     "history": {
       "2026-06-25": {
         "stars": 922,
         "clones": 39,
         "views": 638
+      },
+      "2026-06-26": {
+        "stars": 0,
+        "clones": 3,
+        "views": 1
       }
     },
-    "last_stars": 922,
-    "last_clones": 39,
-    "last_views": 638
+    "last_stars": 921,
+    "last_clones": 42,
+    "last_views": 639
   }
 }
